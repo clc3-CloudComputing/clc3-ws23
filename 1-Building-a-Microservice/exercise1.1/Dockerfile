@@ -16,4 +16,7 @@
 # Build the app (CGO_ENABLED=0 go build -o /usr/myapp) and show the /usr directory  (ls -lsa)
 
 
+# Expose the port 8888
+
+
 # Run the app
