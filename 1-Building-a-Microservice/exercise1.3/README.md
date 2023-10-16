@@ -4,13 +4,7 @@ In this exercise, you will build a Docker image from a Dockerfile and then run a
 
 ## Instructions
 
-1. Create image from the provided Dockerfile:
-
-    ```console
-    docker image build -t [YOUR-DOCKERHUB-ACCOUNT]/myhello:0.0.1 ./
-    ```
-
-1. Run the a container from the image and expose the container port: **8888** to the host port: **9090**.
+1. Run the container from the image and expose the container port: **8888** to the host port: **9090**.
 
     ```console
     docker container run -p 9090:8888 [YOUR-DOCKERHUB-ACCOUNT]/myhello:0.0.1
