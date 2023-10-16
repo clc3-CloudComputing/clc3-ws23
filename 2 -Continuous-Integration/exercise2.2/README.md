@@ -19,7 +19,7 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
 
 1. Setup credentials for DockerHub in GitHub:
 
-    1. In your repository, go to: `Settings` > `Secrets` > `Actions` > **New repository secret**
+    1. In your repository, go to: `Settings` > `Secrets and variables` > `Actions` > **New repository secret**
 
     1. Add the secret `DOCKERHUB_USERNAME` with your DockerHub registry user name
 
@@ -32,7 +32,7 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
     ```yaml
     # Boot Docker builder using by default the docker-container
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v3
     ```
 
 
@@ -41,7 +41,7 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
     ```yaml
     # Login to DockerHub account
     - name: Login to DockerHub
-      uses: docker/login-action@v1 
+      uses: docker/login-action@v3 
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
@@ -50,10 +50,10 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
 1. Extend the `CI.yml` workflow with a Docker `build-push` step. Please change the [user] to your DockerHub account name: 
 
     ```yaml
-    # Build a Docker image based on provided Dockerfile
+    # Build a Docker image based on the provided Dockerfile
     - name: Build and push
       id: docker_build
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v5
       with:
         context: .
         push: true
@@ -79,8 +79,7 @@ It is good practice to not use the version `latest` for an image tag. Instead, m
       id: vars
       shell: bash
       run: |
-        echo "::set-output name=branch::$(echo ${GITHUB_REF#refs/heads/})"
-        echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     ```
 
 1. Change the `Build and push` step to reference the `sha_short` variable for the tag version: 

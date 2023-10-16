@@ -28,7 +28,7 @@ In this exercise, you will scan your code with [SonarCloud](https://sonarcloud.i
 
 1. Select: `With GitHub Actions` and follow the instructions.
 
-    * Create a GitHub Secret, go to `Settings` > `Secrets` > `Actions` > and enter the provided value for the key `SONAR_TOKEN`.
+    * Create a GitHub Secret, go to `Settings` > `Secrets and variables` > `Actions` > and enter the provided value for the key `SONAR_TOKEN`.
 
     * Instead of creating the file `.github/workflows/build.yml`, we extend the `CI.yaml` by adding the following step before *Run test and build*: 
 
