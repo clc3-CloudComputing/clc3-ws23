@@ -1,6 +1,6 @@
 # Exercise 2.3: Scan code with SonarCloud triggered by GitHub Actions
 
-In this exercise, you will scan your code with [SonarCloud](https://sonarcloud.io/) to detects bugs, vulnerabilities and code smells. To trigger a scan, a GitHub Action will be configured that reacts on each new Pull Request (PR).
+In this exercise, you will scan your code with [SonarCloud](https://sonarcloud.io/) to detect bugs, vulnerabilities, and code smells. To trigger a scan, a GitHub Action will be configured that reacts on each new Pull Request (PR).
 
 *Info:* SonarCloud is a leading product for Continuous Code Quality & Code Security online, totally free for open-source projects. It supports all major programming languages, including Java, JavaScript, TypeScript, C#, C/C++ and many more. If your code is closed source, SonarCloud also offers a paid plan to run private analyses.
 
