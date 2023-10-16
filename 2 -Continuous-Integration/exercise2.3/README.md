@@ -1,4 +1,4 @@
-# Exercise 2.3: Scan code with SonarCloud triggered by GitHub Actions
+# Optional Exercise 2.3: Scan code with SonarCloud triggered by GitHub Actions
 
 In this exercise, you will scan your code with [SonarCloud](https://sonarcloud.io/) to detect bugs, vulnerabilities, and code smells. To trigger a scan, a GitHub Action will be configured that reacts on each new Pull Request (PR).
 
@@ -22,7 +22,7 @@ In this exercise, you will scan your code with [SonarCloud](https://sonarcloud.i
 
 ## Instructions
 
-1. Once the respository is set up on SonarCloud, select the repository and go to `Configure`:
+1. Once the repository is set up on SonarCloud, select the repository and go to `Configure`:
 
     ![Configure SonarCloud repository](./assets/configure.png)
 
