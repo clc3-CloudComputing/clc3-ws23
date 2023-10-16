@@ -1,6 +1,7 @@
 # Exercise 2.1: Setup Continuous Integration
 
-In this exercise, you will set up a *Continuous Integration* (CI) workflow using GitHub as a the version control system, GitHub Actions as the build tool, and DockerHub as the artifact repository. This workflow will execute the unit tests of the source code and build the code. To trigger it, a change of the codebase must be performed. 
+In this exercise, you will set up a *Continuous Integration* (CI) workflow using GitHub as the version control system, GitHub Actions as the build tool, and DockerHub as the artifact repository. This workflow will execute the unit tests of the source code and build the code. 
+For triggering the workflow, a change of the codebase must be performed. 
 
 ## Setup
 
@@ -19,7 +20,7 @@ In this exercise, you will set up a *Continuous Integration* (CI) workflow using
 
 ## Instructions
 
-1. Create a **public** GitHub repository called: `mini-ci-example`
+1. Create a **public** GitHub repository called `mini-ci-example`
 
 1. Add and commit `main.go`, `main_test.go`, `fib.go`, `fib_test.go`, and `go.mod` to your repository via drag-and-drop.
 

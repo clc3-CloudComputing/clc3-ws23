@@ -19,7 +19,7 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
 
 1. Setup credentials for DockerHub in GitHub:
 
-    1. In your repository, go to: `Settings` > `Secrets and variables` > `Actions` > **New repository secret**
+    1. In your repository, go to `Settings` > `Secrets and variables` > `Actions` > **New repository secret**
 
     1. Add the secret `DOCKERHUB_USERNAME` with your DockerHub registry user name
 
@@ -69,7 +69,7 @@ In this exercise, you will integrate DockerHub into the CI workflow to push an i
 
 ### Use Git SHA instead of `latest`
 
-It is good practice to not use the version `latest` for an image tag. Instead, make it as concrete as possible, e.g., by using the Git commit SHA instead: 
+It is not good practice to use the version `latest` for an image tag. Instead, make it as concrete as possible, e.g., by using the Git commit SHA instead: 
 
 1. Extend the `CI.yml` workflow with a step that derives the short Git commit SHA and stores it in a variable: 
 
