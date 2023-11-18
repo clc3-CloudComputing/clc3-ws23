@@ -1,8 +1,8 @@
 # Exercise 3.4: Creating a Service
 
-In this exercise, you will specify a service for your deployment.
-Therefore, you will use the service types *ClusterIP*, *NodePort*, and *LoadBalancer*.
-The service resource will be crated by defining a service manifest (`service.yaml`) and afterwards 
+In this exercise, you will specify a Service for your Deployment.
+Therefore, you will use the Service types *ClusterIP*, *NodePort*, and *LoadBalancer*.
+The Service resource will be created by defining a service manifest (`service.yaml`) and afterwards 
 applying it to your Kubernetes cluster.
 
 
