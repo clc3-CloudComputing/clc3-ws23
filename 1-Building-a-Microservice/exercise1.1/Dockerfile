@@ -1,4 +1,4 @@
-# Pull in the layer of the base image: golang:1.13-alpine
+# Pull in the layer of the base image: golang:1.21.3-alpine
 
 
 # Set author label: LABEL author=[YOUR-EMAIL]
