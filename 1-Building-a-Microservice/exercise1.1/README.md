@@ -36,17 +36,17 @@ In this exercise, you will write a Dockerfile and you will build an im
     * Run the app
 
 1. Build a Docker image based on the Dockerfile:
-    * Image tag: `[YOUR-DOCKERHUB-ACCOUNT]/my-first-image:0.0.1`
+    * Image tag: `[YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1`
 
     ```console
-    docker image build -f Dockerfile -t [YOUR-DOCKERHUB-ACCOUNT]/my-first-image:0.0.1 ./ 
+    docker image build -f Dockerfile -t [YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1 ./ 
     ```
     *Note:* If your Docker version is greater than 0.18, you are using Docker's new BuildKit engine that does not display the output from a `RUN` step. Therefore, add the option: `--progress=plain`
 
 1. Execute the command a second time: 
 
     ```console
-    docker image build -f Dockerfile -t [YOUR-DOCKERHUB-ACCOUNT]/my-first-image:0.0.1 ./
+    docker image build -f Dockerfile -t [YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1 ./
     ```
 
     :mag: What is your observation? 

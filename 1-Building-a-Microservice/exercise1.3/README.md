@@ -7,13 +7,13 @@ In this exercise, you will build a Docker image from a Dockerfile and then run a
 1. Run the container from the image and expose the container port: **8888** to the host port: **9090**.
 
     ```console
-    docker container run -p 9090:8888 [YOUR-DOCKERHUB-ACCOUNT]/myhello:0.0.1
+    docker container run -p 9090:8888 [YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1
     ```
 
     * *Optional*: Run the container in *detached mode* shown by the option `--detach` or `-d`, meaning that a Docker container runs in the background of your terminal. It does not receive input or display output.
 
     ```console
-    docker container run -d -p 9090:8888 [YOUR-DOCKERHUB-ACCOUNT]/myhello:0.0.1
+    docker container run -d -p 9090:8888 [YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1
     ```
 
 1. Open a browser and go to: http://localhost:9090
@@ -26,7 +26,7 @@ In this exercise, you will build a Docker image from a Dockerfile and then run a
     
     ```
     CONTAINER ID        IMAGE                    COMMAND             CREATED             STATUS              PORTS                    NAMES
-    789d08da1704        xyz/myhello:0.0.1        "/usr/myapp"        21 seconds ago      Up 19 seconds       0.0.0.0:9999->8888/tcp   foxy_joliot
+    789d08da1704        xyz/hello-app:0.0.1        "/usr/myapp"        21 seconds ago      Up 19 seconds       0.0.0.0:9999->8888/tcp   foxy_joliot
     ```
 
 1. Stop your container:

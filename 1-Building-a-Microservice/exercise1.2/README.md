@@ -42,7 +42,7 @@ In this exercise, you will push an image to the container registry [DockerHub](h
 1. Push image from exercise 1.1 to your DockerHub account:
 
     ```console
-    docker image push [YOUR-DOCKERHUB-ACCOUNT]/my-first-image:0.0.1
+    docker image push [YOUR-DOCKERHUB-ACCOUNT]/hello-app:0.0.1
     ```
 
 1. Verify the push on your account: https://hub.docker.com/
@@ -50,7 +50,7 @@ In this exercise, you will push an image to the container registry [DockerHub](h
 1. Pull the image from a classmate's DockerHub account:
 
     ```console
-    docker image pull [YOUR-CLASSMATE'S-ACCOUNT]/my-first-image:0.0.1
+    docker image pull [YOUR-CLASSMATE'S-ACCOUNT]/hello-app:0.0.1
     ```
 
 1. Verify the pull on your local machine:
