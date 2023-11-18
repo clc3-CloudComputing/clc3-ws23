@@ -14,7 +14,7 @@ In this exercise, you will deploy a container in a Kubernetes cluster. Thus, a p
     kubectl run demo --image=agrimmer/demo:time
     ```
 
-1. To verify that the container started and the app is running, use:
+1. To verify that the container has started and the app is running, use:
     
     ```console
     kubectl get pods
