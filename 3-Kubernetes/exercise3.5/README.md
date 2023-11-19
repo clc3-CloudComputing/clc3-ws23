@@ -69,3 +69,5 @@ By editing the ConfigMap, you will be able to control the output format without 
     :mag: Now, access the website [http://localhost:9999](http://localhost:9999). Do you see an HTML-formatted output? 
 
 1. Change the output format back to *plain*. What is needed that the changes are applied?
+
+1. Mount the ConfigMap as volume and check the files by getting a shell to the running container.
