@@ -113,7 +113,7 @@ applying it to your Kubernetes cluster.
 
     **Note for Google Cloud:**
     You need to create a firewall rule to allow TCP traffic on the node port using
-    `gcloud compute firewall-rules create test-node-port --allow tcp:31425 --target-tags gke-keptn-grimmer-dev-6cb41d0c-node`
+    `gcloud compute firewall-rules create test-node-port --allow tcp:31425 --target-tags gke-grimmer-dev-6cb41d0c-node`
 
 ### LoadBalancer
 **Note for `kind` users:** This service type is not supported.
