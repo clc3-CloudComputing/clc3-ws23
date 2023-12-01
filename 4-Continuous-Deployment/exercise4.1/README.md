@@ -41,7 +41,7 @@ by this, the LoadBalancer is reconfigured before the application process is term
         spec:
           containers:
           - name: demo
-            image: agrimmer/demo:time
+            image: agrimmer/demo:plain
             ports:
             - containerPort: 8888
             readinessProbe:
@@ -70,7 +70,7 @@ by this, the LoadBalancer is reconfigured before the application process is term
 1. Update the image of your deployment:
 
     ```console
-    kubectl set image deployments/demo demo=agrimmer/demo:day-time
+    kubectl set image deployments/demo demo=agrimmer/demo:html
     ```
 
 :rocket: Watch the update of your application without experiencing any downtime.
