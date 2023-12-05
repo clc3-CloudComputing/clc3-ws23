@@ -1,4 +1,4 @@
 FROM alpine:3.18.5
 COPY demo /bin/demo
 ENV FORMAT=html
-CMD ["/bin/demo"]
+ENTRYPOINT ["/bin/demo"]
